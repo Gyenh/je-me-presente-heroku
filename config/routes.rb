@@ -12,6 +12,11 @@ Rails.application.routes.draw do
   get '/users/:id', to: 'users#show'
   post '/', to: 'users#user_post'
 
-  get '/users', to: 'users#errorpage'
+  # get '/users/new'
+  
+  # get '/users/:username', to: 'users#show', as: 'username'
+  # post '/', to: 'users#user_post'
+
+  get '/', to: 'users#errorpage'
 
 end

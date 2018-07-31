@@ -1,6 +1,6 @@
 class User < ApplicationRecord
 
-  validates :username, uniqueness: { case_sensitive: false }
+  validates :username, uniqueness: { case_sensitive: false } 
 
-  validates :username, absence: false
+  validates :username, format: { without: /\s/ }
   end

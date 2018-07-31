@@ -1,8 +1,19 @@
 <h1>Bienvenue dans la création d'utilisateurs !</h1>
 
-<form action="/" method="post">
+<form action="/" method="POST">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-  <input type="text" name="username">
-  <input type="text" name="bio">
+  <fieldset>
+  	<legend>Informations personnelles</legend>
+  Nom d'utilisateur :<br>
+  <input type="text" name="username"><br>
+  Ta bio:<br>
+  <input type="text" name="bio"><br><br>
   <input type="submit" value="Envoyer le formulaire">
+	</fieldset>
+	
+	<br><br><br><br>
+	<input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+
 </form>

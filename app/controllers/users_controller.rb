@@ -4,20 +4,23 @@ class UsersController < ApplicationController
   end
 
   def user_post
-    user = User.new
-    user.username = params["username"]
-    user.bio = params["bio"]
-    user.save
+    @user = User.new
+    @user.username = params["username"]
+    @user.bio = params["bio"]
 
-    redirect_to "/users/#{user.id}"
+      if @user.save
+      redirect_to action: 'show', id: @user.id
+      else render '/users/errorpage'
+      end
+    # redirect_to "/users/#{@user.id}"
   end
 
-
   def show
-    # @user = User.find_by(username: "username_trop_cool")
+    # @user = User.find_by(username: params['username'])
     @user = User.find(params[:id])
+    
   end
 
 end
 
-# User.create(username: params["Username"], bio: params["bio"])
+# User.create(username: params[:username], bio: params[:bio])
