@@ -1,24 +1,9 @@
-# README
+# Application rails "Je me presente" 
+Petite application rails pour créer un utilisater.
+Pour voir le résultat, vous pouvez visiter le lien suivant : [Page HEROKU](https://hidden-forest-74770.herokuapp.com/)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+:shipit: Attention l'application (je-me-presente) ainsi que le site backend sont fait sur une seule et même application.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Contributors
+- William @Wilrib - Non-binaire
+- Gino @Gino
